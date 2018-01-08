@@ -3,3 +3,10 @@ circulo{
 -area();
 -perimetro();
 }
+
+rectangulo{
+-Float altura;
+-Float base;
+-area();
+-perimetro();
+}
