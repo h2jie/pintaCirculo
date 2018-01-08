@@ -1,24 +1,16 @@
-triangulo{
--float base;
--float altura;
+triangulo:poligono{
+-area();
+}
+
+circulo:figura{
+-float radio;
 -area();
 -perimetro();
 -posicionCentro p;
 }
 
-circulo{
--Float radio;
+rectangulo:poligono{
 -area();
--perimetro();
--posicionCentro p;
-}
-
-rectangulo{
--Float altura;
--Float base;
--area();
--perimetro();
--posicionCentro p;
 }
 
 posicionCentro{
@@ -27,3 +19,14 @@ posicionCentro{
 -getX;
 -getY;
 }
+
+interface figura(){
+-area();
+-perimetro();
+}
+
+abstract poligono():figura{
+-posicion[]pos;
+-perimetro();
+}
+
