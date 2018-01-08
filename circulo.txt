@@ -2,6 +2,7 @@ circulo{
 -Float radio;
 -area();
 -perimetro();
+-posicion p;
 }
 
 rectangulo{
@@ -9,4 +10,12 @@ rectangulo{
 -Float base;
 -area();
 -perimetro();
+-posicion p;
+}
+
+posicion{
+-int x;
+-int y
+-getX;
+-getY;
 }
