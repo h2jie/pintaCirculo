@@ -1,32 +1,39 @@
-triangulo:poligono{
+Triangulo:Poligono{
 -area();
 }
 
-circulo:figura{
+Circulo:Figura{
 -float radio;
 -area();
 -perimetro();
 -posicionCentro p;
 }
 
-rectangulo:poligono{
+Rectangulo:Poligono{
 -area();
 }
 
-posicionCentro{
+PosicionCentro{
 -int x;
 -int y
 -getX;
 -getY;
 }
 
-interface figura(){
+(interface) Figura(){
 -area();
 -perimetro();
 }
 
-abstract poligono():figura{
+(abstract) Coligono():Figura{
 -posicion[]pos;
 -perimetro();
 }
 
+(interface) CalculadoraDistancia(){
+-calcula(Posicion a,Posicion b);
+}
+
+EuclideanDistancia:CalculadoraDistancia{
+-calcula(p,p)
+}
