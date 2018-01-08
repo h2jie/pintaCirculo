@@ -1,8 +1,16 @@
+triangulo{
+-float base;
+-float altura;
+-area();
+-perimetro();
+-posicionCentro p;
+}
+
 circulo{
 -Float radio;
 -area();
 -perimetro();
--posicion p;
+-posicionCentro p;
 }
 
 rectangulo{
@@ -10,10 +18,10 @@ rectangulo{
 -Float base;
 -area();
 -perimetro();
--posicion p;
+-posicionCentro p;
 }
 
-posicion{
+posicionCentro{
 -int x;
 -int y
 -getX;
